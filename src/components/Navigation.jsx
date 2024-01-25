@@ -61,7 +61,7 @@ const Navigation = () => {
                   {Links.map((links, index) => (
                     <li
                       key={index}
-                      className=" py-2 relative link_line_active lg:link_line">
+                      className=" py-2 relative link_line_active lg:link_line hover:text-white transition-colors">
                       <Link to={links.linkTo} className=" py-2">
                         {links.name}
                       </Link>
