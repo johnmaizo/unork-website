@@ -50,7 +50,7 @@ const Home = () => {
             <StartUp />
           </div>
 
-          <div className=" mt-[16em] mx-auto relative text-center">
+          <div className=" mt-[10em] md:mt-[16em] mx-auto relative text-center">
             <span className=" font-semibold text-[25rem] md:text-[35rem] opacity-10 absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] -z-10">U</span>
             <span className=" bg-[#FF6996] p-1 rounded-full text-sm uppercase font-bold px-4">Carefully Crafted Template</span>
             <p className=" text-[2.5rem] leading-[1.1em] mt-3 mb-10 lg:max-w-[16em] font-medium  lg:text-[3rem] mx-auto">“If you think good design is expensive, you should look at the cost of bad design.”</p>
