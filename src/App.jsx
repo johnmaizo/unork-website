@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes, Redirect } from "react-router-dom"
 
 import Home from "./pages/Home"
 import Navigation from "./components/Navigation"
@@ -13,8 +13,8 @@ const App = () => {
     <Navigation />
       <main>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/about" element={<AboutPage/>}></Route>
+          <Route exact path="/" element={ <Redirect to={<Home/>}/>}></Route>
+          <Route path="/about" element={ <Redirect to={<AboutPage/>}/>}></Route>
           <Route path="/news" element={<NewsPage/>}></Route>
           <Route path="/contact" element={<ContactsPage/>}></Route>
         </Routes>
