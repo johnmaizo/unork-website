@@ -53,7 +53,7 @@ const Footer = () => {
                         <div className=" opacity-60 flex gap-3">
                             {
                                 Links.map((link,index) => (
-                                    <Link to={link.linkTo} key={index} className=" text-[1.25rem] underline underline-offset-8">{link.name}</Link>
+                                    <Link to={link.linkTo} key={index} className=" text-[1.25rem] underline underline-offset-8 hover:no-underline focus:no-underline">{link.name}</Link>
                                 ))
                             }
                         </div>

@@ -111,7 +111,7 @@ const Home = () => {
                 <button className=" lg:inline-block font-extrabold text-[1rem] rounded-full bg-[#3C5CCF] p-2 py-3 hover:bg-[#212121] focus:bg-[#212121] transition-colors lg:p-5 lg:w-[11em] lg:absolute lg:translate-y-[-50%] lg:top-[50%] lg:right-[1em]">Get Started</button>
               </div>
 
-              <div className=" flex gap-3 items-center lg:mt-5">
+              <div className=" flex gap-3 items-center mt-5">
                 <Checkbox />
                 <p className=" text-[0.9rem] font-semibold"><span className=" opacity-60">By signing up you agree to our</span> <Link to={"/"} className=" underline text-white">Terms & Conditions.</Link></p>
               </div>
