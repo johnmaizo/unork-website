@@ -61,8 +61,8 @@ const Navigation = () => {
                   {Links.map((links, index) => (
                     <li
                       key={index}
-                      className=" py-3 lg:py-2 relative link_line_active lg:link_line hover:text-white transition-colors">
-                      <Link to={links.linkTo} className=" py-2 pr-[100%]">
+                      className=" py-3 my-3 lg:py-2 relative link_line_active lg:link_line hover:text-white transition-colors">
+                      <Link to={links.linkTo} className=" py-2 pr-[100%] md:pr-0">
                         {links.name}
                       </Link>
                     </li>
