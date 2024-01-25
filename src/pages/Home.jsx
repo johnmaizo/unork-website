@@ -122,7 +122,7 @@ const Home = () => {
 
 
       {/* Testimonial */}
-      <section className=" text-white text-center py-0 lg:pb-[8em] ">
+      <section className=" text-white text-center pb-[8em] ">
         <div className="mx-auto px-5 w-full max-w-[1300px] lg:px-10">
           <h2 className=" text-xl font-semibold opacity-60">Testimonials</h2>
           <p className=" text-4xl font-semibold mt-4 lg:text-[3.2rem] lg:mt-5">Clients About Us</p>
