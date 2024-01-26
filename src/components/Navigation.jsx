@@ -69,6 +69,13 @@ const Navigation = () => {
                   ))}
                 </ul>
               </nav>
+              {
+                isOpen && (
+                  <div onClick={ToggleMenu} className=" fixed w-screen h-screen top-0 left-0 -z-10">
+                    
+                  </div>
+                )
+              }
             </div>
             <div className="flex items-center gap-2 md:gap-[1em] md:flex-row-reverse flex-wrap">
               <button
