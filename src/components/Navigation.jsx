@@ -54,7 +54,7 @@ const Navigation = () => {
                 </Link>
               </div>
               <div className={`navbar_overlay lg:relative lg:block lg:z-20 ${
-                  isOpen ? "block " : " h-0"
+                  isOpen ? "block " : ""
                 }`}>
                 <nav
                   className={` relative top-[0em] bg-[#111111] w-full px-5 z-[10] py-5 navSm:navbar_transition left-0 lg:block lg:bg-transparent lg:top-0 lg:z-10 ${isOpen ? " navSm:navbar_transform" : "navSm:navbar"}`}>
