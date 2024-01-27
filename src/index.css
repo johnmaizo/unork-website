@@ -91,12 +91,17 @@
   .grid_auto_fit_featured_work {
     grid-template-columns: repeat( auto-fit, minmax(20em, 1fr));
   }
+  
+  .grid_auto_fit_teams {
+    grid-template-columns: repeat( auto-fit, minmax(18em, 1fr));
+  }
 
+
+  /* ! Footer Icon */
   .footer_icon {
     filter: invert(45%) sepia(12%) saturate(35%) hue-rotate(314deg) brightness(105%) contrast(85%);
   }
   
-
 
   /* ! Checkbox */
   .container {
