@@ -59,6 +59,31 @@
     transform: translate(-50%, -50%);
   }
 
+  .navbar_transition {
+    transition: transform 400ms ease 0s;
+  }
+
+  .navbar {
+    transform: translateY(-355px) translateX(0px);
+  }
+
+  .navbar_transform {
+    transform: translateY(0px) translateX(0px) !important;
+  }
+
+
+  .navbar_overlay {
+    position: absolute;
+    overflow: hidden !important;
+    /* display: none; */
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+
+  /* ! Grids */
   .grid_auto_fit_fun_fact {
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
   }

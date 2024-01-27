@@ -53,27 +53,27 @@ const Navigation = () => {
                   />
                 </Link>
               </div>
-              <nav
-                className={` fixed top-[5.7em] bg-[#111111] w-full px-5 z-[-1] py-5 left-0 ${
-                  isOpen ? "block" : "hidden"
-                } lg:block lg:bg-transparent lg:relative lg:top-0 lg:z-10`}>
-                <ul className="text-[1.2rem] font-bold lg:flex gap-5">
-                  {Links.map((links, index) => (
-                    <li
-                      key={index}
-                      className=" py-3 my-3 lg:py-2 relative link_line_active lg:link_line hover:text-white transition-colors">
-                      <Link to={links.linkTo} className=" py-2 pr-[100%] md:pr-0">
-                        {links.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+              <div className={`navbar_overlay lg:relative lg:block lg:z-20 ${
+                  isOpen ? "block " : " h-0"
+                }`}>
+                <nav
+                  className={` relative top-[0em] bg-[#111111] w-full px-5 z-[10] py-5 navSm:navbar_transition left-0 lg:block lg:bg-transparent lg:top-0 lg:z-10 ${isOpen ? " navSm:navbar_transform" : "navSm:navbar"}`}>
+                  <ul className="text-[1.2rem] font-bold lg:flex gap-5">
+                    {Links.map((links, index) => (
+                      <li
+                        key={index}
+                        className=" py-3 my-3 lg:py-2 relative link_line_active lg:link_line hover:text-white transition-colors">
+                        <Link to={links.linkTo} className=" py-2 pr-[100%] md:pr-0">
+                          {links.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
               {
                 isOpen && (
-                  <div onClick={ToggleMenu} className=" fixed w-screen h-screen top-0 left-0 -z-10">
-                    
-                  </div>
+                  <div onClick={ToggleMenu} className=" fixed w-screen h-screen top-0 left-0 -z-10"></div>
                 )
               }
             </div>

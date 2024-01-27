@@ -8,6 +8,7 @@ export default {
     extend: {
       screens: {
         'flexSm': {'max': '639px'},
+        'navSm': {'max': '1023px'},
       },
 
       
